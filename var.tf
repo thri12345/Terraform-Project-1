@@ -16,11 +16,21 @@ default =  "10.0.3.0/24"
 }
 variable "availability_zone" {
     type = list(string)
-    default = [ "ap-south-1a", "ap-south-1b"]
-  
+    default = [ "ap-south-1a", "ap-south-1b"] 
 }
 variable "availability_zone-pvt" {
     type = string
-    default = "ap-south-1a"
-  
+    default = "ap-south-1a"  
+}
+variable "ami_id" {
+  type = string
+  default = "ami-0521bc4c70257a054" 
+}
+variable "instance_type" {
+  type = string
+  default = "t2.micro"
+}
+variable "key_name" {
+  type = string
+  default = "rhel-proj-pem"
 }
