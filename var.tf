@@ -28,9 +28,23 @@ variable "ami_id" {
 }
 variable "instance_type" {
   type = string
-  default = "t2.micro"
+  default = "t2.medium"
 }
 variable "key_name" {
   type = string
   default = "rhel-proj-pem"
+}
+variable "max_size" {
+  type = string
+  default = "4"
+  
+}
+variable "min_size" {
+  type = string
+  default = "1"
+}
+variable "desired_capacity" {
+  type = string
+  default = "2"
+  
 }
